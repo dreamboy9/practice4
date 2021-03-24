@@ -1,4 +1,4 @@
-FROM php:7.0-apache
+FROM php:7-apache
 
 ENV HOST_USER_ID 33
 ENV PHP_INI_DATE_TIMEZONE 'UTC'
