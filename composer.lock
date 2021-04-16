@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "949d55d933c4e0725a2086a189595483",
+    "content-hash": "caaed12461120e3331580abbf22a5e1a",
     "packages": [
         {
             "name": "atgp/factur-x",
@@ -143,24 +143,32 @@
         },
         {
             "name": "mike42/escpos-php",
-            "version": "v1.2.1",
+            "version": "v3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mike42/escpos-php.git",
-                "reference": "cfea4c4fc95516ac953e1e5b623f854632afa2ee"
+                "reference": "dcb569a123d75f9f6a4a927aae7625ca6b7fdcf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mike42/escpos-php/zipball/cfea4c4fc95516ac953e1e5b623f854632afa2ee",
-                "reference": "cfea4c4fc95516ac953e1e5b623f854632afa2ee",
+                "url": "https://api.github.com/repos/mike42/escpos-php/zipball/dcb569a123d75f9f6a4a927aae7625ca6b7fdcf3",
+                "reference": "dcb569a123d75f9f6a4a927aae7625ca6b7fdcf3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "ext-intl": "*",
+                "ext-json": "*",
+                "ext-zlib": "*",
+                "mike42/gfx-php": "^0.6",
+                "php": ">=7.0.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.5.*",
-                "squizlabs/php_codesniffer": "2.*"
+                "phpunit/phpunit": "^6.5",
+                "squizlabs/php_codesniffer": "^3.3"
+            },
+            "suggest": {
+                "ext-gd": "Used for image printing if present.",
+                "ext-imagick": "Will be used for image printing if present. Required for PDF printing or use of custom fonts."
             },
             "type": "library",
             "autoload": {
@@ -174,36 +182,62 @@
             ],
             "authors": [
                 {
-                    "name": "Roni Saha",
-                    "email": "roni.cse@gmail.com"
-                },
+                    "name": "Michael Billington",
+                    "email": "michael.billington@gmail.com"
+                }
+            ],
+            "description": "PHP receipt printer library for use with ESC/POS-compatible thermal and impact printers",
+            "homepage": "https://github.com/mike42/escpos-php",
+            "keywords": [
+                "Epson",
+                "barcode",
+                "escpos",
+                "printer",
+                "receipt-printer"
+            ],
+            "time": "2019-10-13T06:27:43+00:00"
+        },
+        {
+            "name": "mike42/gfx-php",
+            "version": "v0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mike42/gfx-php.git",
+                "reference": "ed9ded2a9298e4084a9c557ab74a89b71e43dbdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mike42/gfx-php/zipball/ed9ded2a9298e4084a9c557ab74a89b71e43dbdb",
+                "reference": "ed9ded2a9298e4084a9c557ab74a89b71e43dbdb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpbench/phpbench": "@dev",
+                "phpunit/phpunit": "^6.5",
+                "squizlabs/php_codesniffer": "^3.3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mike42\\": "src/Mike42"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
                 {
                     "name": "Michael Billington",
                     "email": "michael.billington@gmail.com"
-                },
-                {
-                    "name": "Gergely Radics",
-                    "email": "gerifield@ustream.tv"
-                },
-                {
-                    "name": "Warren Doyle",
-                    "email": "w.doyle@fuelled.co"
-                },
-                {
-                    "name": "vharo",
-                    "email": "vharo@geepok.com"
                 }
             ],
-            "description": "Thermal receipt printer library, for use with ESC/POS compatible printers",
-            "homepage": "https://github.com/mike42/escpos-php",
-            "keywords": [
-                "ESC-POS",
-                "driver",
-                "escpos",
-                "print",
-                "receipt"
-            ],
-            "time": "2016-04-25T01:14:07+00:00"
+            "description": "The pure PHP graphics library",
+            "homepage": "https://github.com/mike42/gfx-php",
+            "time": "2019-10-05T02:44:33+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -324,12 +358,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Luracast/Restler-Framework.git",
-                "reference": "6bc0968f8c8aa47c9a62d548b9d7e34f1ed4fc09"
+                "reference": "d52e61600d153bca60a287c35141c5c01863127b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Luracast/Restler-Framework/zipball/6bc0968f8c8aa47c9a62d548b9d7e34f1ed4fc09",
-                "reference": "6bc0968f8c8aa47c9a62d548b9d7e34f1ed4fc09",
+                "url": "https://api.github.com/repos/Luracast/Restler-Framework/zipball/d52e61600d153bca60a287c35141c5c01863127b",
+                "reference": "d52e61600d153bca60a287c35141c5c01863127b",
                 "shasum": ""
             },
             "require": {
@@ -376,7 +410,7 @@
                 "rest",
                 "server"
             ],
-            "time": "2018-01-06T01:39:27+00:00"
+            "time": "2020-02-13T16:05:12+00:00"
         },
         {
             "name": "setasign/fpdf",
@@ -515,6 +549,7 @@
                 "fpdi",
                 "pdf"
             ],
+            "abandoned": true,
             "time": "2019-01-30T14:38:19+00:00"
         },
         {
@@ -552,7 +587,7 @@
             ],
             "authors": [
                 {
-                    "name": "Sebastien MALOT",
+                    "name": "Sebastien Malot",
                     "email": "sebastien@malot.fr"
                 }
             ],
@@ -726,6 +761,7 @@
                     "homepage": "http://www.acci.cz"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2014-04-08T15:00:19+00:00"
         },
         {
@@ -770,6 +806,7 @@
                     "homepage": "http://www.acci.cz/"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2015-04-20T18:58:01+00:00"
         },
         {
@@ -817,6 +854,7 @@
             ],
             "description": "This tool check syntax of PHP files about 20x faster than serial check.",
             "homepage": "https://github.com/JakubOnderka/PHP-Parallel-Lint",
+            "abandoned": "php-parallel-lint/php-parallel-lint",
             "time": "2015-12-15T10:42:16+00:00"
         },
         {
@@ -1268,6 +1306,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2015-09-15T10:49:45+00:00"
         },
         {
@@ -1396,6 +1435,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2015-10-02T06:51:40+00:00"
         },
         {
@@ -1966,12 +2006,12 @@
             "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bb2d123231c095735130cc8f6d31385a44c7b308"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bb2d123231c095735130cc8f6d31385a44c7b308",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bb2d123231c095735130cc8f6d31385a44c7b308",
                 "reference": "bb2d123231c095735130cc8f6d31385a44c7b308",
                 "shasum": ""
             },
@@ -2023,5 +2063,6 @@
         "php": ">=5.3.0",
         "ext-curl": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
