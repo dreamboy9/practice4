@@ -32,16 +32,16 @@
 		"mobiledetect/mobiledetectlib" : "2.8.17",
 		"phpoffice/phpexcel" : "1.8.1",
 		"restler/framework" : "3.0.0-RC6",
-		"tecnickcom/tcpdf" : "^6.2",
-		"atgp/factur-x" : "^1.0",
-		"luracast/restler": "^3.0"
+		"tecnickcom/tcpdf" : "6.2.26",
+		"atgp/factur-x" : "1.0.1",
+		"luracast/restler": "3.1.1"
 	},
 	"require-dev" : {
-		"jakub-onderka/php-parallel-lint" : "^0",
-		"jakub-onderka/php-console-highlighter" : "^0",
-		"phpunit/phpunit" : "^4",
-		"squizlabs/php_codesniffer" : "^2",
-		"phpunit/phpunit-selenium" : "^2"
+		"jakub-onderka/php-parallel-lint" : "0.9.2",
+		"jakub-onderka/php-console-highlighter" : "0.3.2",
+		"phpunit/phpunit" : "4.8.27",
+		"squizlabs/php_codesniffer" : "2.7.0",
+		"phpunit/phpunit-selenium" : "2.0.2"
 	},
 	"suggest" : {
 		"ext-mysqlnd" : "To use with MySQL or MariaDB",
