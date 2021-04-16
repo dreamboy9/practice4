@@ -33,9 +33,9 @@
     },
     "require-dev" : {
         "phpunit/phpunit" : "> 4.8, <6.0.0",
-        "evert/phpdoc-md" : "~0.1.0",
-        "sabre/cs"        : "^1.0.0",
-        "monolog/monolog": "^1.18"
+        "evert/phpdoc-md" : "0.1.1",
+        "sabre/cs"        : "1.0.0",
+        "monolog/monolog": "1.26.0"
     },
     "suggest" : {
         "ext-curl" : "*",
